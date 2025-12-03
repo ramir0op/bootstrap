@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+    <style>
+        @font-face {
+            font-family: "TituloFont";
+            src: url("fonts/Tomeoftheunknown-3gL3.ttf") format("opentype");
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body,
+        p,
+        li,
+        span {
+            font-family: "Inter", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Titulofont", serif;
+        }
+
+        .btn-normal {
+            border: 1px solid #000 !important;
+            box-shadow: none !important;
+            border-radius: 4px !important;
+        }
+
+        body {
+            background-color: #F1E4B3;
+        }
+
+        body,
+        p,
+        li,
+        span {
+            font-family: "Inter", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "TituloFont", serif;
+        }
+
+        .btn-normal {
+            border: 1px solid #000 !important;
+            box-shadow: none !important;
+            border-radius: 4px !important;
+        }
+
+        body {
+            background-color: #D9C88E;
+        }
+
+        .paper {
+            background-color: beige !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        nav.split-nav {
+            font-family: "TituloFont", serif !important;
+            background-color: beige !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        nav.split-nav * {
+            font-family: "TituloFont", serif !important;
+        }
+
+        .boton-aventura {
+            display: block;
+            text-align: center !important;
+            background-color: #EFE5C2 !important;
+            border: 1px solid #000 !important;
+            box-shadow: none !important;
+            color: black !important;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+
+        .card .btn-normal {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            text-decoration: underline !important;
+            color: inherit !important;
+            cursor: pointer !important;
+        }
+
+        .card .btn-normal:hover {
+            text-decoration: none !important;
+        }
+    </style>
+    </style>
+    <title>Sitio Web </title>
+</head>
+
+<body>
+    <nav class="split-nav no-border">
+        <div class="nav-brand">
+            <h3><a href="index.html">Mas Alla del Jardin</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proceso.html">Proceso de produccion</a></li>
+
+            
+                    <li>
+                        <a href="#" onclick="document.getElementById('modal-1').checked = true; return false;">
+                            Jugar
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="paper container">
+        <div class="row">
+        
+            <div class="md-8 sm-12 col">
+                <article class="article">
+                    <h1 class="article-title">Mas Alla del Jardin</h1>
+                    <p>Una versión interactiva inspirada en la serie, 
+                        donde vos elegís el camino y la historia va cambiando.</p>
+                </article>
+            </div>
+
+     
+            <div class="md-4 sm-12 col">
+                <h3>Integrantes</h3>
+
+                <div class="collapsible">
+                    <input id="collapsible-first" type="checkbox" name="collapsible">
+                    <label for="collapsible-first">Marina Vergara</label>
+                    <div class="collapsible-body">
+                        <span>Estudiante de diseño multimedial.</span>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <input id="collapsible2" type="checkbox" name="collapsible">
+                    <label for="collapsible2">Ramiro Pereyra</label>
+                    <div class="collapsible-body">
+                        <span>Estudiante de diseño multimedial.</span>
+                    </div>
+                </div>
+
+                <h4>Ver Aventura Grafica</h4>
+
+                <div class="centro-aventura">
+                    <label class="paper-btn btn-normal boton-aventura" for="modal-1">Jugar</label>
+                </div>
+            </div> 
+        </div> 
+
+
+        
+        <input class="modal-state" id="modal-1" type="checkbox">
+        <div class="modal">
+            <label class="modal-bg" for="modal-1">X</label>
+            <div class="modal-body">
+                <label class="btn-close" for="modal-1">X</label>
+
+                <h4 class="modal-title">Aventura Grafica</h4>
+                <iframe src="p5/index.html" width="650" height="490" style="border:none;">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="md-6 sm-12 col">
+                <a href="acerca.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <img src="img/banda.jpg" alt="banda" class="no-border">
+                        <div class="card-body">
+                            <h4 class="card-title">De que trata la serie?</h4>
+                            <p class="card-text">Contexto de lo que trata la serie para poder entender el proyecto.</p>
+                            <span class="btn-normal">Ver más</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="md-6 sm-12 col">
+                <a href="proceso.html" style="text-decoration:none; color:inherit;">
+                    <div class="card">
+                        <img src="img/bosque.jpg" alt="bosque" class="no-border">
+                        <div class="card-body">
+                            <h4 class="card-title">Proceso de produccion</h4>
+                            <p class="card-text">Resumen de nuestro proceso hacia la aventura gráfica. </p>
+                            <span class="btn-normal">Ver más</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="md-6 sm-4 col">
+                <img src="img/dormidos.jpg" alt="hermanos durmiendo" class="no-border">
+            </div>
+            <div class="md-6 sm-8 col">
+                <h5>Gracias por verlo :)</h5>
+                <p>Este proyecto es una reinterpretación estudiantil de Más Allá del jardín. No tiene fines comerciales.</p>
+            </div>
+        </div>
+</body>
+
+</html>

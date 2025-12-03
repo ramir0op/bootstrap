@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+
+    <style>
+        @font-face {
+            font-family: "TituloFont";
+            src: url("fonts/Tomeoftheunknown-3gL3.ttf") format("opentype");
+        }
+    </style>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <style>
+        body,
+        p,
+        li,
+        span {
+            font-family: "Inter", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "TituloFont", serif;
+        }
+
+        body {
+            background-color: #F1E4B3;
+        }
+        .paper {
+            background-color: beige !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        nav.split-nav {
+            background-color: beige !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        nav.split-nav * {
+            font-family: "TituloFont", serif !important;
+        }
+
+      
+        img.full-width {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+ 
+        .no-border {
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        .accordion-button {
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Proceso</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="split-nav no-border">
+        <div class="nav-brand">
+            <h3><a href="index.html">Mas Alla del Jardin</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="menu" type="checkbox" name="menu">
+            <label for="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proceso.html">Sobre el Proyecto</a></li>
+                    <li><a href="p5/index.html">Jugar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="paper container">
+
+        <h1 class="article-title">Un cuento desde "Mas alla del jardin"</h1>
+
+        <p class="text-lead">
+            Un portal hacia la Aventura Gráfica inspirada en Over The Garden Wall.
+        </p>
+
+        <img src="img/bosque.jpg" alt="Imagen principal" class="full-width no-border">
+
+        <hr>
+
+        <p>
+            En este relato interactivo acompañás a Wirt y Greg mientras intentan encontrar el camino a casa a través de
+            bosques otoñales, pueblos extraños y criaturas misteriosas. Cada decisión que tomes altera su recorrido por
+            “Lo Desconocido”.
+        </p>
+        <hr>
+        <h4>Proceso de armado</h4>
+
+        <div class="row">
+            <div class="sm-12">
+                <details>
+                    <summary><strong>– Diagrama de flujo</strong></summary>
+                    <p>
+                        Arrancamos por el diagrama de flujo para ordenar la idea de la aventura gráfica.
+                        Determinar qué pasa en cada pantalla, qué opciones tiene el jugador y cómo se va ramificando la
+                        historia.
+                        Nos sirve para entender el recorrido completo antes de empezar a programar.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><strong>– Construcción del estilo visual</strong></summary>
+                    <p>
+                        Para el estilo visual usamos directamente imágenes sacadas de la misma serie y una tipografía
+                        que se acercara a la
+                        original. También buscamos sonidos y pequeños detalles que nos remitieran la serie,
+                        así todo mantiene la misma onda que el dibujo y no se siente desconectado.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><strong>– Implementación</strong></summary>
+                    <p>
+                        En cuanto a la programación, armamos toda la aventura en p5.js. Básicamente organizamos las
+                        pantallas, las elecciones y los sonidos para que todo responda a lo que va haciendo el jugador.
+                        La idea era que la experiencia se sintiera fluida y que cada decisión realmente cambiara algo.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
